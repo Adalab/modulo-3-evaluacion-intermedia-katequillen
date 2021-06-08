@@ -2,7 +2,7 @@ import React from "react";
 import Pokemon from "./Pokemon.js";
 
 const PokeList = (props) => {
-  const items = props.PokemonData.map((pokemon) => (
+  const eachPoke = props.PokemonData.map((pokemon) => (
     <li key={pokemon.id}>
       <Pokemon pokemon={pokemon} />
     </li>
@@ -10,7 +10,7 @@ const PokeList = (props) => {
   return (
     <>
       <h1 className="title">My Pokemon List</h1>
-      <ul className="card">{items}</ul>
+      <ul className="container">{eachPoke}</ul>
     </>
   );
 };

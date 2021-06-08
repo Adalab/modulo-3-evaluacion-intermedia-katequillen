@@ -1,1 +1,13 @@
+.title {
+  text-align: center;
+}
 
+.card {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.card_text {
+  list-style: none;
+}
